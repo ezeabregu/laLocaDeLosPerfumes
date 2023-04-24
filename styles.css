@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'roxborough-cf-bold';
+    src: url('./fonts/FontsFree-Net-roxborough-cf-bold.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --rosa: #f05686;
+    --verde: #d5de55;
+    --font: 'roxborough-cf-bold';
+}
+
+body{ 
+    background-color: #131415;
+    color: whitesmoke;
+}
+
+.header_section{
+    background: rgb(240,86,134);
+    background: linear-gradient(93deg, rgba(240,86,134,1) 0%, rgba(213,222,85,1) 100%); 
+}
+
+.header_section .nav_section{
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.nav_section img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.nav_section ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_section li{
+    display: inline-block;
+    align-items: center;
+    margin: 0px 10px;
+    font-family: var(--font);
+}
+
+.nav_section a{
+    color: white;
+    text-decoration: none;
+}
+
+.heroe_section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.heroe_section .titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.heroe_section h1{
+  color: whitesmoke;
+  font-family: var(--font);
+}
+
+.heroe_section img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.heroe_section .info{
+    margin-top: 40px;
+}
+
+.info p{
+    margin: 20px 0px;
+}
