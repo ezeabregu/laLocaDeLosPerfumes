@@ -194,6 +194,80 @@ body{
     color: var(--gradiente);
 }
 
+/***********************************/
+
+.yo_section{
+    width: 60%;
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.card {
+    --background: linear-gradient(to left, var(--verde) 0%, var(--rosa) 100%);
+    width: 350px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+   }
+   
+   .card::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+   }
+   
+   .card-info {
+    --color: var(--fondo);
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+   }
+   
+   .card .title {
+    font-weight: bold;
+    letter-spacing: .1em;
+   }
+   
+   /*Hover*/
+   .card:hover::after {
+    opacity: 0;
+   }
+   
+   .card:hover .card-info {
+    color: #f7ba2b;
+    transition: color 1s;
+   }
+   
+
+/***********************************/
+
 .contacto_section{
     width: 60%;
     padding: 5rem 1rem;
@@ -273,8 +347,14 @@ body{
     size: 26rem;
 }
 
+textarea {
+    resize: none;
+}
+  
+
 .footer_section{
     width: 100%;
+    z-index: 99;
     display: flex;
     justify-content: center;
     bottom: 0;
