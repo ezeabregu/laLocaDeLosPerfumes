@@ -435,6 +435,11 @@ textarea {
         width: 100%;
     }
 
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
     .contacto_section{
         width: 100%;
     }
