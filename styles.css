@@ -443,20 +443,20 @@ textarea {
         margin: 0px 40px;
     }
     .form input {
-        width: 25rem;
+        width: 20rem;
         height: 2.3rem;
         margin-bottom: 1rem;
     }
     
     .form #mensaje {
-        width: 25rem;
+        width: 20rem;
         height: 8rem;
         margin-bottom: 1rem;
     }
     
     .form button {
         border-radius: 5px;
-        width: 25rem;
+        width: 20rem;
         padding: 10px 0px;
         background: rgb(240, 86, 134);
         background: linear-gradient(93deg, rgba(240, 86, 134, 1) 0%, rgba(213, 222, 85, 1) 100%);
