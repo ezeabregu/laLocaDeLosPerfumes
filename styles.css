@@ -140,6 +140,7 @@ body {
 
 .info p {
     margin: 20px 0px;
+    font-size: 1.5rem;
 }
 
 .coleccion_section {
@@ -217,11 +218,11 @@ body {
 
 .card {
     --background: linear-gradient(to left, var(--verde) 0%, var(--rosa) 100%);
-    width: 350px;
-    height: 300px;
+    width: 450px;
+    height: 310px;
     padding: 5px;
     border-radius: 1rem;
-    overflow: visible;
+    overflow: hidden;
     background: #f7ba2b;
     background: var(--background);
     position: relative;
@@ -253,24 +254,25 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    overflow: visible;
+    padding: 00px 20px;
+    overflow: hidden;
     border-radius: .7rem;
 }
 
 .card .title {
     font-weight: bold;
-    letter-spacing: .1em;
+    color: var(--text);
 }
 
 /*Hover*/
-.card:hover::after {
+/* .card:hover::after {
     opacity: 0;
 }
 
 .card:hover .card-info {
     color: #f7ba2b;
     transition: color 1s;
-}
+} */
 
 
 /***********************************/
@@ -333,12 +335,14 @@ body {
 }
 
 .seguime h3,
-.contacto h3 {
+.contacto h3,
+.yo_section h3,
+.titulo h3 {
     font-size: 2.5rem;
 }
 
 .socialbtn {
-    margin: 2rem 0rem;
+    margin: 5rem 0rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -346,13 +350,14 @@ body {
     gap: 2rem;
 }
 
+.socialbtn svg{
+    transform: scale(1.8);
+    margin: 0px 40px;
+}
+
 .socialbtn a {
     text-decoration: none;
     color: var(--rosa);
-}
-
-.socialbtn svg {
-    size: 26rem;
 }
 
 textarea {
